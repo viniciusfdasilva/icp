@@ -1,0 +1,7 @@
+{
+    "files.associations": {
+        "ipc.h": "c",
+        "shm.h": "c",
+        "process.h": "c"
+    }
+}
