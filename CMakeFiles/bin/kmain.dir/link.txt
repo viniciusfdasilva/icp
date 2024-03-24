@@ -1,0 +1,1 @@
+/usr/bin/cc -rdynamic CMakeFiles/./bin/kmain.dir/src/ipc.c.o CMakeFiles/./bin/kmain.dir/src/pm.c.o CMakeFiles/./bin/kmain.dir/src/process.c.o CMakeFiles/./bin/kmain.dir/src/semaphore.c.o CMakeFiles/./bin/kmain.dir/src/shm.c.o CMakeFiles/./bin/kmain.dir/src/kmain.c.o -o ./bin/kmain

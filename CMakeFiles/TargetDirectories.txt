@@ -1,0 +1,3 @@
+/home/vinicius/ipc/CMakeFiles/./bin/kmain.dir
+/home/vinicius/ipc/CMakeFiles/edit_cache.dir
+/home/vinicius/ipc/CMakeFiles/rebuild_cache.dir

@@ -10,11 +10,12 @@ typedef unsigned int shm_id_t;
 typedef struct shm_segment{
     size_t size;
     shm_id_t id;
-    uint32_t buff[SHM_SIZE];
+    uint8_t buff[SHM_SIZE];
 }shmseg;
 
 extern shmseg *shm_init();
 extern void shm_write(shmseg *shm, uint8_t data[]);
+extern void shm_read(shmseg *shm, uint8_t *data);
 extern void shm_destroy(shmseg *shm);
 
 #endif // __SHM_H__

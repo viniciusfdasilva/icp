@@ -1,4 +1,5 @@
 #include "../include/shm.h"
+#include "../include/ipc.h"
 #include "../include/utils/kassert.h"
 #include <sys/shm.h>
 
@@ -27,11 +28,15 @@ static shmseg *shm_init()
 
 static void shm_write(shmseg *shm, uint8_t data[])
 {
+    memcpy(shm->buff, data, BUF_SIZE);
+}
 
+static void shm_read(shmseg *shm, uint8_t *data)
+{
+    memcpy(data, shm->buff, BUF_SIZE);
 }
 
 static void shm_destroy(shmseg *shm)
 {
     shmctl(shm->id, IPC_RMID, NULL);
-    free(shm);
 }

@@ -1,9 +1,10 @@
 #ifndef __SEMAPHORE_H__
 
+#include <pthread.h>
 typedef struct semaphore{
-    int value;
-    int waiting;
-    int* queue;
+    pthread_mutex_t mutex;
+    pthread_cond_t cond;
+    int count;
 }sem_t;
 
 extern void semaphore_init(sem_t sem, int value);
